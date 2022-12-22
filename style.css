@@ -1,0 +1,13 @@
+.nav{
+	background: dodgerblue;
+	font-size: 22px;
+	font-weight: bold;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	text-align: center;
+}
+.details-holder{
+	width: 70%;
+	margin-left: 15%;
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}

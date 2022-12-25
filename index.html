@@ -9,24 +9,34 @@
 <body>
  <div class="nav"><center>This random user generator Vue</center></div>
  <br><br>
- <div id="app" class="details-holder"> 
- 
- 	<img :src="Photo" alt="photo" class="image"><br>
- 	<label>Title : {{Title}}</label><br>
-    <label>First Name : {{FirstName}}</label><br>
-    <label>Last Name : {{LastName}}</label><br>
-    <label>Email : {{Email}}</label><br>
-    <label>Phone : {{Phone}}</label><br>
-    <label>Gender : {{Gender}}</label><br>
-    <label>Year of Birth : {{YoB}}</label><br>
-    <label>ID Number : {{ID}}</label><br>
-    <label>Country : {{Country}}</label><br>
-    <label>City : {{City}}</label><br>
-    <label>Password  : {{Password}}</label><br>
-    <button v-on:click="getnew()">New User</button>
-   
+ <div id="app" class="generator">
+ <div  class="details-holder"> 
+ <center>
+ 	<img :src="Photo" alt="photo" class="image"><br><br>
+ 	<label class="my-label">Title : {{Title}}</label><br><br>
+    <label class="my-label">First Name : {{FirstName}}</label><br><br>
+    <label class="my-label">Last Name : {{LastName}}</label><br><br>
+    <label class="my-label">Email : {{Email}}</label><br><br>
+    <label class="my-label">Phone : {{Phone}}</label><br><br>
+    <label class="my-label">Gender : {{Gender}}</label><br><br>
+    <label class="my-label">Year of Birth : {{YoB}}</label><br><br>
+    <label class="my-label">ID Number : {{ID}}</label><br><br>
+    <label class="my-label">Country : {{Country}}</label><br><br>
+    <label class="my-label">City : {{City}}</label><br><br>
+    <label class="my-label">Password  : {{Password}}</label><br><br>
+    
+   </center>
  </div>
-
+ <div class="button-holder">
+    <button v-on:click="getnew()">New User Grean #006400</button>
+ </div>
+  <div class="button-holder">
+    <button v-on:click="getnew()">New User Orange #e25822</button>
+ </div>
+  <div class="button-holder">
+    <button v-on:click="getnew()">New User maroon #800020</button>
+ </div>
+</div>
  <script src="https://unpkg.com/vue@3"></script>
  <script type="text/javascript" src="index.js"></script>
 </body>

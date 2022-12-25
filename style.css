@@ -6,8 +6,31 @@
 	padding-top: 8px;
 	text-align: center;
 }
+.generator{
+	width: 100%;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .details-holder{
-	width: 70%;
-	margin-left: 15%;
+
 	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	 flex: 1 1 310px; /*  Stretching: */
+    flex: 0 1 310px; /*  No stretching: */
+    margin: 5px;
+}
+.button-holder{
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	 flex: 1 1 310px; /*  Stretching: */
+    flex: 0 1 310px; /*  No stretching: */
+    margin: 5px;
+}
+.image{
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.my-label{
+	margin-top: 32px;
+	padding: 8px 8px;
+	border-bottom: 2px solid dodgerblue;
 }

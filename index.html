@@ -9,32 +9,35 @@
 <body>
  <div class="nav"><center>This random user generator Vue</center></div>
  <br><br>
- <div id="app" class="generator">
- <div  class="details-holder"> 
+ <div id="app" class="generator" >
+ <div  :class="newBackground"> 
  <center>
  	<img :src="Photo" alt="photo" class="image"><br><br>
- 	<label class="my-label">Title : {{Title}}</label><br><br>
-    <label class="my-label">First Name : {{FirstName}}</label><br><br>
-    <label class="my-label">Last Name : {{LastName}}</label><br><br>
-    <label class="my-label">Email : {{Email}}</label><br><br>
-    <label class="my-label">Phone : {{Phone}}</label><br><br>
-    <label class="my-label">Gender : {{Gender}}</label><br><br>
-    <label class="my-label">Year of Birth : {{YoB}}</label><br><br>
-    <label class="my-label">ID Number : {{ID}}</label><br><br>
-    <label class="my-label">Country : {{Country}}</label><br><br>
-    <label class="my-label">City : {{City}}</label><br><br>
-    <label class="my-label">Password  : {{Password}}</label><br><br>
+ 	<label :class="newClass">Title : {{Title}}</label><br><br>
+    <label :class="newClass">First Name : {{FirstName}}</label><br><br>
+    <label :class="newClass">Last Name : {{LastName}}</label><br><br>
+    <label :class="newClass">Email : {{Email}}</label><br><br>
+    <label :class="newClass">Phone : {{Phone}}</label><br><br>
+    <label :class="newClass">Gender : {{Gender}}</label><br><br>
+    <label :class="newClass">Year of Birth : {{YoB}}</label><br><br>
+    <label :class="newClass">ID Number : {{ID}}</label><br><br>
+    <label :class="newClass">Country : {{Country}}</label><br><br>
+    <label :class="newClass">City : {{City}}</label><br><br>
+    <label :class="newClass">Password  : {{Password}}</label><br><br>
     
    </center>
  </div>
  <div class="button-holder">
-    <button v-on:click="getnew()">New User Grean #006400</button>
+
+    <button v-on:click="getnew() & greenClass()" class="btn-green">New User Grean</button>
  </div>
   <div class="button-holder">
-    <button v-on:click="getnew()">New User Orange #e25822</button>
+    
+    <button v-on:click="getnew() & orangeClass()" class="btn-orange">New User Orange </button>
  </div>
   <div class="button-holder">
-    <button v-on:click="getnew()">New User maroon #800020</button>
+  
+    <button v-on:click="getnew() & maroonClass()"  class="btn-maroon">New User maroon </button>
  </div>
 </div>
  <script src="https://unpkg.com/vue@3"></script>

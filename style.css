@@ -24,6 +24,28 @@
 	 flex: 1 1 310px; /*  Stretching: */
     flex: 0 1 310px; /*  No stretching: */
     margin: 5px;
+
+}
+.green-bg{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	 flex: 1 1 310px; /*  Stretching: */
+    flex: 0 1 310px; /*  No stretching: */
+    margin: 5px;
+	background: mediumseagreen;
+}
+.maroon-bg{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	 flex: 1 1 310px; /*  Stretching: */
+    flex: 0 1 310px; /*  No stretching: */
+    margin: 5px;
+	background: #800020;
+}
+.orange-bg{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	 flex: 1 1 310px; /*  Stretching: */
+    flex: 0 1 310px; /*  No stretching: */
+    margin: 5px;
+	background: #e25822;
 }
 .image{
 	border-radius: 50%;
@@ -33,4 +55,49 @@
 	margin-top: 32px;
 	padding: 8px 8px;
 	border-bottom: 2px solid dodgerblue;
+}
+.my-label-marron{
+	margin-top: 32px;
+	padding: 8px 8px;
+	border-bottom: 2px solid #800020;
+}
+.my-label-green{
+	margin-top: 32px;
+	padding: 8px 8px;
+	border-bottom: 2px solid mediumseagreen;
+}
+.my-label-orange{
+	margin-top: 32px;
+	padding: 8px 8px;
+	border-bottom: 2px solid #e25822;
+}
+.btn-green{
+	background: mediumseagreen;
+	width: 90%;
+	height: 90%;
+	outline: none;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+}
+.btn-orange{
+	background: #e25822;
+		width: 90%;
+	height: 90%;
+	outline: none;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+}
+.btn-maroon{
+	background: #800020;
+	width: 90%;
+	height: 90%;
+	outline: none;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
 }

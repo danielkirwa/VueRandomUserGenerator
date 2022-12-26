@@ -15,7 +15,8 @@ const app = Vue.createApp({
 			Title: '',
 			Password: '',
 
-
+            newClass : 'my-label',
+            newBackground : 'details-holder',
 
 		}
 	},
@@ -36,6 +37,18 @@ const app = Vue.createApp({
 			this.City = results[0]. location.city
 			this.Title = results[0].name.title 
 			this.Password = results[0].login.password
+		},
+		maroonClass(){
+			this.newClass = 'my-label-marron'
+			this.newBackground = 'maroon-bg'
+		},
+		greenClass(){
+			this.newClass = 'my-label-green'
+			this.newBackground = 'green-bg'
+		},
+		orangeClass(){
+			this.newClass = 'my-label-orange'
+			this.newBackground = 'orange-bg'
 		},
 	},
 })
